@@ -4,8 +4,6 @@
     margin: 0;
 }
 
-
-
 header {
     padding: 10px;
     background-color: #0E1C36;
@@ -18,7 +16,6 @@ header h1 {
     display: inline-block;
 }
 
-
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -27,12 +24,12 @@ header nav {
     font-size: 20px;
 }
 
-
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
     color: #afcbff;
 }
+
 a:link {
     color: #afcbff;
 }
@@ -40,8 +37,24 @@ a:visited  {
     color: #afcbff;
 }
 
+a:hover {
+    color: #9b5094;
+}
+
 body {
 background-color: #ffede1;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+
+}
+
+main img {
+    padding: 0px 10px 0px 10px;
+    height: 300px
+
 }
 
 main h1 {
@@ -50,26 +63,26 @@ main h1 {
 }
 
 .sec {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 200px;
+    margin-bottom: 1em;
+    padding: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 sec img {
-    height: 200px;
+    height: 20em;
     width: 100%;
 }
+
 #ws  {
     display: flex;
-    flex-wrap: wrap;
-
     justify-content: space-between;
     padding: 60px;
+    flex-wrap: wrap;
 }
+
 .proj {
-    flex: 1 0 200px;
-    padding: 10px;
+    flex: 1 0 15%;
+    padding: 1em;
     text-align: center;
     border-style: solid;
     border-width: 1px;
@@ -77,6 +90,18 @@ sec img {
     color: #afcbff;
 }
 
+.proj:hover {
+    background: #9b5094;
+}
+
 #firstProj {
-    flex: 2 1 50%;
+    flex: 1 0 40%;
+}
+
+@media screen and (max-width: 800px) {
+    header, nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 }
